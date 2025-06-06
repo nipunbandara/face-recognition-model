@@ -9,11 +9,11 @@ img_height, img_width = 160, 160
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 
 # Load your trained face recognition model
-model = tf.keras.models.load_model("your_model.h5")  # <-- Update with your model path
+model = tf.keras.models.load_model("face_rec_model.h5")  # <-- Update with your model path
 
 # Example: class names (update with your actual class names)
 # Automatically get class names from your dataset directory
-dataset_dir = "dataset"  # <-- Update with your dataset path
+dataset_dir = "dataset"  
 class_names = sorted([d for d in os.listdir(dataset_dir) if os.path.isdir(os.path.join(dataset_dir, d))])
 
 cap = cv2.VideoCapture(0)  # 0 is the default webcam

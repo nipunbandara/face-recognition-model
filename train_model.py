@@ -65,5 +65,5 @@ model.fit(
 )
 
 # Save the model
-model.save("your_model.h5")
-print("Model saved as your_model.h5")
+model.save("face_rec_model.h5")
+print("Model saved as face_rec_model.h5")
