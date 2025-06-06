@@ -38,6 +38,7 @@ python recognize_live.py
 ### 4. Running the Main Script
 
 Alternatively, you can use the main script to perform all steps:
+Additionally, with a TensorFlow.js format conversion function for h5 keras model
 
 ```bash
 python main.py
